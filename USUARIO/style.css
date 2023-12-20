@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-container, .product-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 5px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+  }
+  
+  .product-container {
+    display: none;
+  }
+  
+  .disabled {
+    background-color: #ccc;
+  }
