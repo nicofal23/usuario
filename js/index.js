@@ -1,16 +1,16 @@
 function verificarLogin() {
-    var usuario = document.getElementById("usuario").value;
-    var contrasena = document.getElementById("contrasena").value;
+    console.log('Formulario enviado');
+    
+    // Get the values entered by the user
+    const usuario = document.getElementById('usuario').value;
+    const contrasena = document.getElementById('contrasena').value;
 
-    // Verifica si el usuario y la contraseña ingresados coinciden con los valores especificados
-    if (usuario === "admin" && contrasena === "1234") {
-        // Redirige a la página home.html
-        window.location.href = "home.html";
+    // Check if the entered username and password are correct
+    if (usuario === 'admin' && contrasena === 'admin') {
+      // If correct, replace the current page with home.html
+      window.location.replace('home.html');
     } else {
-        // Agrega cualquier lógica adicional para credenciales incorrectas si es necesario
-        alert("Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.");
+      // If incorrect, show an error message (you can customize this part)
+      alert('Usuario o contraseña incorrectos');
     }
-
-    // Evita que el formulario se envíe de la manera tradicional
-    return false;
 }
