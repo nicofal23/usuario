@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enviar Datos a Firebase</title>
-</head>
-<body>
-  <input type="text" id="textoInput" placeholder="Escribe algo...">
-  <button id="enviarBtn">Enviar</button>
 
-  <script type="module" src="main.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Datos a Firebase</title>
+</head>
+
+<body>
+    <input type="text" id="textoInput" placeholder="Escribe algo...">
+    <button id="enviarBtn">Enviar</button>
+
+    <div>
+        <label for="nombreUsuario">Ingrese usuario:</label>
+        <input type="text" id="nombreUsuario">
+        <label for="contrasena">Ingrese contraseña:</label>
+        <input type="password" id="contrasena">
+        <button id="iniciarSesionBtn">Iniciar Sesión</button>
+
+        <div id="modal" style="display: none;">
+            <div id="contenidoModal">
+                <h1>Lista</h1>
+                <p id="mostrarLista">•</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
 </body>
+
 </html>
